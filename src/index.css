@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #07090E;
+    color: #F8FAFC;
+    transition: background-color 200ms ease, color 200ms ease;
+  }
+
+  html.light body {
+    background-color: #F8FAFC;
+    color: #0F172A;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Light Mode Theme Overrides for Clinical Surfaces & Typography */
+html.light .theme-root {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+html.light .bg-\[\#07090E\],
+html.light .bg-\[\#07090E\]\/60 {
+  background-color: #F1F5F9 !important;
+}
+
+html.light .bg-\[\#07090E\]\/95,
+html.light .bg-\[\#0B0E17\] {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+}
+
+html.light .bg-\[\#111827\] {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+
+html.light .bg-slate-900,
+html.light .bg-slate-900\/60 {
+  background-color: #E2E8F0 !important;
+}
+
+html.light .bg-slate-800 {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+}
+
+html.light .border-slate-800,
+html.light .border-slate-800\/80,
+html.light .border-slate-800\/90,
+html.light .border-slate-700 {
+  border-color: #CBD5E1 !important;
+}
+
+html.light .divide-slate-800\/70 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #E2E8F0 !important;
+}
+
+html.light .text-slate-50,
+html.light .text-slate-100,
+html.light .text-slate-200 {
+  color: #0F172A !important;
+}
+
+html.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400,
+html.light .text-slate-500 {
+  color: #475569 !important;
+}
+
+html.light .text-cyan-400,
+html.light .text-cyan-300 {
+  color: #0284C7 !important;
+}
+
+html.light .text-emerald-400 {
+  color: #059669 !important;
+}
+
+html.light .text-rose-400,
+html.light .text-rose-300 {
+  color: #DC2626 !important;
+}
+
+html.light .text-amber-400 {
+  color: #D97706 !important;
+}
+
+/* Custom Range Slider Styling for Clinical Precision */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #1E293B;
+  height: 6px;
+  border-radius: 3px;
+}
+
+html.light input[type="range"]::-webkit-slider-runnable-track {
+  background: #CBD5E1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -5px;
+  background-color: #06B6D4;
+  height: 16px;
+  width: 16px;
+  border-radius: 9999px;
+  border: 2px solid #07090E;
+  box-shadow: 0 0 0 1px #06B6D4;
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1), background-color 150ms ease;
+}
+
+html.light input[type="range"]::-webkit-slider-thumb {
+  background-color: #0284C7;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 0 0 1px #0284C7;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background-color: #22D3EE;
+}
+
+input[type="range"]:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid #06B6D4;
+  outline-offset: 2px;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Diabetes Risk Intelligence",
+  "description": "Clinical LightGBM-calibrated Diabetes Risk Assessment & Diagnostic Telemetry Web Application developed by Md.Saif Al Hasan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
